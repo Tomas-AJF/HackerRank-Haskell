@@ -1,16 +1,11 @@
 module Main where
 
-
 {------------------------------------------------------------------------------------------------------------
 Define in HASKELL a data type TTT aa of a tree with each vertex having 0,1 or 2 children, 
 and whose every leaf (a vertex with 0 children) and every internal vertex has a list of values of aa type. 
 -------------------------------------------------------------------------------------------------------------}
 
 data TTT aa = Leaf [aa] | Node (TTT aa) (TTT aa)  deriving (Show,Eq)
- 
- 
- {
- 
  
 -- ********** Compute the square of its argument ********** --
 a :: Integer -> Integer 
@@ -60,8 +55,6 @@ mm f (Leaf n) = Leaf (apply_f f n)
 apply_f :: (Integer -> Integer) -> [Integer] -> [Integer]
 apply_f f (t:ts) = f t : apply_f f ts
 apply_f f [] = []
-
-
 
 
 tree =   
