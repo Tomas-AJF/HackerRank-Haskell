@@ -1,7 +1,7 @@
 {-# LANGUAGE OverloadedStrings,  FlexibleContexts   #-}
 
 {-----------------------
-AUTHOR: Tomás Francisco
+AUTHOR: github.com/Tomas-AJF
 ------------------------}
 
 module CSV where
@@ -87,7 +87,7 @@ parsedColumsAndRows = do
 
 --- PATH OF FILE: CHANGE IT HERE
 csvFile :: FilePath
-csvFile = "abrir"
+csvFile = "name_of_csv_file.csv"
 
 
 csvMAIN :: IO ParsedCSV
